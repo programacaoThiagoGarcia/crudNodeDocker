@@ -1,0 +1,11 @@
+CREATE DATABASE IF NOT EXISTS thiagodb;
+USE thiagodb;
+CREATE TABLE IF NOT EXISTS users (
+id INT(11) AUTO_INCREMENT,
+name TEXT,
+age INT(11),
+PRIMARY KEY (id)
+);
+
+INSERT INTO users VALUE(0,'Thiago',39);
+INSERT INTO users VALUE(0,'Virginia',35);

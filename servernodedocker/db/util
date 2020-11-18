@@ -1,0 +1,13 @@
+
+*** Resolver problemas com Autenticação ***
+
+ALTER USER 'root' IDENTIFIED WITH mysql_native_password BY '<password>';
+
+flush privileges;
+
+===========================================================================
+*** Correr script.sql ***
+
+docker exec -i <container-name> mysql -uroot -p<password> < <script.sql>
+
+===========================================================================

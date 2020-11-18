@@ -43,8 +43,7 @@ app.post('/user', function (req, res) {
         if (error) {
             res.send(error)
         }
-        res.send(fields);
-        // console.log(fields)
+        res.send(result);
     });
 
 });
@@ -56,7 +55,6 @@ app.delete('/user',function(req,res){
             res.send(error)
         }
         res.send(result);
-        console.log(fields)
     });
 });
 
